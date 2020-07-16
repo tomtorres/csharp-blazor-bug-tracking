@@ -15,8 +15,7 @@
 
     [Inject]
     public IBugService BugService { get; set; } = new BugService();
-    [Inject]
-    public NavigationManager NavService { get; set; } = new NavigationManager();
+    public NavigationManager NavService;
     public Bug AddBug { get; set; } = new Bug();
 
     protected void HandleValidSubmit()
